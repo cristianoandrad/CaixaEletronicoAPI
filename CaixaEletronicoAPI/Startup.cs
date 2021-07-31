@@ -36,7 +36,7 @@ namespace CaixaEletronicoAPI
             services.AddScoped<ContasService>();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "InformacoesAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CaixaEletronicoAPI", Version = "v1" });
                 var fileName = $"{ Assembly.GetExecutingAssembly().GetName().Name }.xml";
                 var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
                 c.IncludeXmlComments(filePath);
