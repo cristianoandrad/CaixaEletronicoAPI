@@ -52,10 +52,9 @@ namespace CaixaEletronicoAPI.Controllers
             return tipoConta;
         }
 
-        // PUT: api/TipoContas/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/TipoContas/5        
         /// <summary>
-        /// Altera o tipo de conta
+        /// Altera o tipo de conta por id
         /// </summary>
         /// <param name="id"></param>
         /// <param name="tipoConta"></param>
@@ -90,7 +89,6 @@ namespace CaixaEletronicoAPI.Controllers
         }
 
         // POST: api/TipoContas
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         /// <summary>
         /// Cria tipos de contas
         /// </summary>

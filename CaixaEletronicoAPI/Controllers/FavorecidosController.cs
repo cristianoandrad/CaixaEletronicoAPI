@@ -51,8 +51,7 @@ namespace CaixaEletronicoAPI.Controllers
             return favorecido;
         }
 
-        // PUT: api/Favorecidoes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Favorecidoes/5        
         /// <summary>
         /// Altera o favorecido pelo id
         /// </summary>
@@ -88,8 +87,7 @@ namespace CaixaEletronicoAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Favorecidoes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Favorecidoes        
         /// <summary>
         /// Adiciona favorecidos
         /// </summary>

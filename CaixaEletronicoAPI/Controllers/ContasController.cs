@@ -72,12 +72,13 @@ namespace CaixaEletronicoAPI.Controllers
             conta.FavorecidoId = favorecido;
             conta.TipoContaId = tipoconta;
 
+            await _context.SaveChangesAsync();
+
             return Ok("Alteração Realizada");
 
         }
 
-        // POST: api/Contas
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Contas        
         /// <summary>
         /// Cadastro de contas
         /// </summary>

@@ -22,8 +22,7 @@ namespace CaixaEletronicoAPI.Controllers
         }
 
 
-        // PUT: api/Depositar/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Depositar/5        
         /// <summary>
         /// Informe o id da conta e o valor, retorna o valor do reposito
         /// </summary>

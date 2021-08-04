@@ -24,7 +24,7 @@ namespace CaixaEletronicoAPI.Services
                 return;
             }
 
-            TipoConta contacorrete = new TipoConta(1, "Conta Correte");
+            TipoConta contacorrete = new TipoConta(1, "Conta Corrente");
             TipoConta contapoupanca = new TipoConta(2, "Conta Poupanca");
 
             dados.TipoConta.AddRange(contacorrete, contapoupanca);
