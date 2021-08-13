@@ -7,6 +7,7 @@ namespace CaixaEletronicoAPI.Models
 {
     public class Conta
     {
+        
         public int Id { get; set; }
         public int Agencia { get; set; }
         public long Numero { get; set; }
