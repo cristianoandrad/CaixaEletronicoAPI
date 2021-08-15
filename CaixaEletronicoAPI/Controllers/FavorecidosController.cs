@@ -51,8 +51,24 @@ namespace CaixaEletronicoAPI.Controllers
             return favorecido;
         }
 
-        
+        // GET: ConsultaFavorecidos
+        /// <summary>
+        /// Informe nome do favorecido e retorna todas as propriedades
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <returns></returns>
+        [HttpGet("PorNome/{nome}")]
+        public async Task<ActionResult<Favorecido>> GetFavorecidosByName(string nome)
+        {
+            var favorecido = await _context.Favorecido.Where(x => x.Nome == nome).FirstOrDefaultAsync();
 
+            if (favorecido == null)
+            {
+                return NotFound();
+            }
+
+            return favorecido;
+        }
         // PUT: api/Favorecidoes/5        
         /// <summary>
         /// Altera o favorecido pelo id
@@ -61,8 +77,8 @@ namespace CaixaEletronicoAPI.Controllers
         /// <param name="favorecido"></param>
         /// <returns></returns>
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutFavorecido(int id, Favorecido favorecido)
-        {
+            public async Task<IActionResult> PutFavorecido(int id, Favorecido favorecido)
+            {
             if (id != favorecido.Id)
             {
                 return BadRequest();
